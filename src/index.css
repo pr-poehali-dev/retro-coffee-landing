@@ -122,4 +122,46 @@
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(218, 165, 32, 0.6);
   }
+
+  .coffee-steam::before,
+  .coffee-steam::after {
+    content: "";
+    position: absolute;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
+    animation: steam 2s ease-in-out infinite;
+  }
+
+  .coffee-steam::before {
+    width: 8px;
+    height: 8px;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation-delay: 0s;
+  }
+
+  .coffee-steam::after {
+    width: 6px;
+    height: 6px;
+    top: -25px;
+    left: 45%;
+    transform: translateX(-50%);
+    animation-delay: 0.8s;
+  }
+
+  @keyframes steam {
+    0% {
+      opacity: 0;
+      transform: translateX(-50%) translateY(0px) scale(1);
+    }
+    50% {
+      opacity: 1;
+      transform: translateX(-50%) translateY(-15px) scale(1.2);
+    }
+    100% {
+      opacity: 0;
+      transform: translateX(-50%) translateY(-30px) scale(0.8);
+    }
+  }
 }

@@ -66,7 +66,7 @@ const Menu = () => {
           {/* Coffee Menu */}
           <div className="retro-card p-8">
             <div className="flex items-center mb-8">
-              <div className="bg-amber-600 p-3 rounded-full mr-4">
+              <div className="bg-amber-600 p-3 rounded-full mr-4 relative coffee-steam">
                 <Icon name="Coffee" size={28} className="text-amber-50" />
               </div>
               <h3 className="font-merriweather text-3xl font-bold text-amber-800">
