@@ -6,7 +6,7 @@ export default {
     "./pages/**/*.{ts,tsx}",
     "./components/**/*.{ts,tsx}",
     "./app/**/*.{ts,tsx}",
-    "./src/**/*.{ts,tsx}"
+    "./src/**/*.{ts,tsx}",
   ],
   prefix: "",
   theme: {
@@ -19,7 +19,7 @@ export default {
     },
     extend: {
       fontFamily: {
-        merriweather: ["Merriweather", "serif"],
+        inter: ["Inter", "sans-serif"],
         "open-sans": ["Open Sans", "sans-serif"],
       },
       colors: {
